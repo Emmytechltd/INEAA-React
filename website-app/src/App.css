@@ -1,0 +1,174 @@
+/* General Reset and Body Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container for central alignment */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Global Styles for Headings and Paragraphs */
+h1, h2, h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Buttons */
+button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Navbar Global Styles */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #007BFF;
+}
+
+/* Hero Section */
+.hero {
+  height: 60vh;
+  background: url('../assets/hero-image.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeIn 1.5s ease;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  animation: fadeIn 2s ease;
+}
+
+/* University and Testimonial Section */
+.university-navbar {
+  background-color: #f0f0f0;
+  padding: 30px;
+  text-align: center;
+}
+
+.university-navbar h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.university-logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.university-logos img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.university-logos img:hover {
+  transform: scale(1.1);
+}
+
+.testimonials {
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  animation: slideIn 1.5s ease;
+}
+
+.testimonial img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.testimonial blockquote {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.testimonial p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .university-logos {
+    flex-wrap: wrap;
+  }
+
+  .university-logos img {
+    width: 80px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { transform: translateY(50px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}

@@ -1,0 +1,20 @@
+.home {
+    text-align: center;
+    background-image: url('/path/to/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+  }
+  
+  .hero {
+    padding-top: 40%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .hero {
+      padding-top: 60%;
+      font-size: 1.2rem;
+    }
+  }
+  
